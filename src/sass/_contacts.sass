@@ -1,0 +1,66 @@
+.contacts
+ position: relative
+	&-block_address
+		&::after
+	  content: "" 
+			position: absolute
+			margin-top: -110px
+			margin-left: -25px
+			background: url(../img/map-icon.png) center no-repeat
+			display: block
+	  height: 30px
+	  width: 17px
+	&-block_phone
+		&::after
+			content: ''
+			position: absolute
+			margin-left: -25px
+			margin-top: -74px
+			background:  url(../img/tel.png) center no-repeat
+			display: block
+			height: 30px
+			width: 17px
+	&-block_mail
+		&::after
+			content: ''
+			position: absolute
+			margin-left: -25px
+			margin-top: -54px
+			background:  url(../img/email.png) center no-repeat
+			display: block
+			height: 30px
+			width: 17px 
+	&-block
+		border-radius: 10px
+		position: absolute
+		left: 10%
+		top: 10%
+		background: #fff 
+		padding-top: 33px
+		padding-left: 62px
+		padding-right: 40px
+		padding-bottom: 10px
+		&_contact
+			margin-top: 25px
+			margin-bottom: 19px
+			font-size: 22px
+			font-family: 'Roboto Bold'
+			line-height: 24px
+			text-transform: uppercase
+		&_title
+			display: block
+			font-size: 18px
+			font-family: 'Roboto Med'
+			margin-bottom: 8px
+			margin-top: 8px
+		&_text
+			font-family: 'Roboto lig'
+			margin-bottom: 20px
+			font-size: 14px
+			a
+				color: #000
+				text-decoration: none
+.map
+	height: 550px
+	width: 100%
+

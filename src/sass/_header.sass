@@ -1,0 +1,123 @@
+.header
+	&-bumper
+		&_link
+			z-index: 5
+			display: block
+			width: 50px
+			height: 50px
+			position: fixed
+			top: 20px
+			left: 20px
+			span, span:before, span:after
+				display: block
+				height: 4px
+				width: 30px
+				position: absolute
+				left: 50%
+				margin-left: -15px
+				top: 50%
+				margin-top: -1px
+				background-color: #373737
+			span:before
+				transition: all 0.2s
+				content: ''
+				margin-top: 5px
+			span:after
+				transition: all 0.2s
+				content: ''
+				margin-top: -9px
+		&_activ span
+			background-color: transparent
+			&:before
+				transform: rotate(135deg)
+				margin-top: 0
+			&:after
+				transform: rotate(-135deg)
+				margin-top: 0
+.menu-bumper
+	margin-top: -18px
+	opacity: 0.9
+	background-color: #ff9d00
+	position: fixed
+	width: 100vw
+	height: 100vh
+	z-index: 3
+	display: flex
+	justify-content: center
+	align-items: center
+	transition: all 0.5s
+	left: 0
+	&_activ
+		
+		left: -100vw
+	ul
+		list-style: none
+		padding: 0
+		text-align: center
+	li 
+		width: 100vw
+		a
+			display: block
+			width: 100%
+			color: #fff
+			line-height: 4
+			font-family: 'Roboto lig'
+			letter-spacing: 4px
+			text-decoration: none
+			transition: all 0.2s
+			&:hover
+				display: block
+				background-color: rgba(255,255,255,.4)
+				
+
+.header
+	&-logo
+		background: url(../img/header-logo.png) center no-repeat
+		background-size: 100%
+		width: 191px
+		height: 61px
+	padding: 17px
+ font-family: 'Roboto Med';
+	&-contacts
+		display: flex
+		justify-content: flex-end
+		align-items: center
+		&__phone
+			a
+				text-decoration: none
+				color: #000
+			&s
+				display: flex
+			font-size: 22px
+			margin-right: 13px
+			font-family: 'Roboto Med'
+.line
+		border-right: 1px solid #5f5f5f
+		padding-right: 13px
+		&-menu
+  	border-right-style: dotted  
+.menu-list_room
+	margin: 6px
+	border-right-style: dotted
+			
+
+@keyframes motion
+	from
+		margin-bottom: -350px
+		opacity: 0
+	to
+		margin-bottom: 0px
+		transform:  rotateY(360deg)
+		opacity: 1
+.animate
+	animation-delay: 0.4s
+	animation-name: motion
+	animation-duration: 1s
+	animation-direction: alternate
+
+
+
+
+
+
+		

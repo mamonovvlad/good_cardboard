@@ -1,0 +1,46 @@
+.production
+	padding:
+		top: 87px
+		bottom: 90px
+	&-slider
+		position: relative
+		z-index: 2
+		&__top
+			margin-bottom: 13px
+			height: 377px
+			overflow-y: hidden
+		&__bottom
+			outline: none
+			padding-left: 30px
+			padding-right: 30px
+			max-height: 78px
+			overflow-y: hidden
+			&_item
+				overflow: none
+				filter: brightness(50%)
+			img
+				padding: 0 6px
+	.slick-current .production-slider__bottom_item
+		filter: none
+	&-text
+		max-width: 379px
+		&__title
+			position: relative
+			padding-top: 20px
+			padding-bottom: 20px
+			color: $text-color-light
+			background-color: $active-color
+			margin-left: -10%
+			padding-left: 10%
+			margin-top: 19px
+			width: 110%
+			z-index: -1
+			font-family: 'Roboto Reg'
+			font-size: 28px
+		&__descr
+			p
+				font-size: 14px
+				font-family: 'Roboto lig'
+				line-height: 18px
+				text-align: justify
+			
